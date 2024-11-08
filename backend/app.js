@@ -9,7 +9,7 @@ const { authenticateJWT } = require('./ middleware/auth');
 
 const app = express();
 
-const allowedDomains = ['https://wallstreetsim-live.onrender.com', 'http://localhost:3001'];
+const allowedDomains = ['https://testproject-g6m8.onrender.com', 'http://localhost:3001'];
 
 const corsOptions = {
     origin: allowedDomains

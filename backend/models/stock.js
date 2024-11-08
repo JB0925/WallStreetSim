@@ -60,6 +60,7 @@ class Stock {
             throw new Error(response.data['Error Message']);
         }
 
+        console.log('Response Data:', JSON.stringify(response.data, null, 2));
         const timeSeriesData = response.data['Time Series (Daily)'];
         const processedData = Object.entries(timeSeriesData).map(([date, value]) => ({
             date,
